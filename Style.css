@@ -1,0 +1,245 @@
+body {
+  text-align: center;
+  color: hsl(210, 10%, 33%);
+  background: url(./images/bg-header-mobile.png) no-repeat;
+  background-size: contain;
+  font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  margin: 0px;
+
+}
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  margin: 7.1875rem 0.75rem 0rem 0.75rem;
+}
+main {
+  margin: auto 0.75rem;
+}
+p {
+  color: hsl(201, 11%, 66%);
+
+  margin-left: auto;
+  margin-right: auto;
+}
+h1 {
+  margin-top: 4.375rem;
+  margin-bottom: 0rem;
+}
+h1,
+h2,
+h3 {
+  font-weight: 600;
+}
+.fstsec h3,
+.secsec h3,
+.logo img {
+  margin-top: 4rem;
+}
+
+footer img,
+main img,
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fstsec img,
+.secsec img {
+  width: 20rem;
+  margin-top: 5rem;
+}
+.thdsec img {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.thdsecp {
+  margin-bottom: 6rem;
+}
+h2,
+footer {
+  margin-top: 9rem;
+}
+
+.logo {
+  margin-top: 5rem;
+}
+.buttons {
+  margin-top: 2.1875rem;
+}
+button {
+  width: 20rem;
+  margin: 0.625rem auto;
+  padding: 1rem;
+  border-radius: 1.5625rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.75;
+}
+.ios {
+  background-color: hsl(171, 66%, 44%);
+  box-shadow: 0rem 0.4375rem 1.0625rem -0.4375rem hsl(171, 66%, 44%);
+  border-bottom: hsl(171, 60%, 38%) solid;
+}
+
+.mac {
+  background-color: hsl(233, 100%, 69%);
+  box-shadow: 0rem 0.4375rem 1.0625rem -0.4375rem hsl(233, 100%, 69%);
+  border-bottom: hsl(233, 94%, 55%) solid;
+}
+footer {
+  background-color: rgb(245, 246, 248);
+  padding-top: 4rem;
+}
+footer img {
+  width: 4rem;
+  margin-bottom: 2rem;
+}
+.contactList {
+  list-style: none;
+  padding: 0rem;
+  margin-top: 0rem;
+}
+li {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.contactList li:hover {
+  color: hsl(171, 66%, 44%);
+}
+.SocialIcon {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0rem;
+  margin-top: 0rem;
+}
+.SocialIcon img {
+  width: auto;
+  margin: auto 1.3rem;
+}
+.SocialIcon img:hover {
+  color: rgb(245, 248, 246);
+  filter: invert(55%) sepia(53%) saturate(585%) hue-rotate(122deg)
+    brightness(100%) contrast(85%);
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    background: url(./images/bg-header-desktop.png) no-repeat;
+    width: 100vw;
+  }
+  p{
+    width: 40rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+  button {
+    width: 12rem;
+    padding: 1rem 2rem;
+  }
+  .fstsec img,
+  .secsec img {
+    width: auto;
+  }
+  .fstsecsup {
+    display: flex;
+    flex-direction: row;
+  }
+  .fstsecsup div {
+    text-align: left;
+    margin: 5rem;
+  }
+  .fstsecsup div p {
+    width: 24rem;
+  }
+  .fstsecsup img {
+    margin-left: -43px;
+    margin-right: 0rem;
+  }
+  .ios {
+    margin-right: 0.5rem;
+  }
+  .mac {
+    margin-left: 0.5rem;
+  }
+  .thdsecsup {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .thdsecsup div {
+    margin: 1rem;
+  }
+  .thdsecsup p {
+    width: 25rem;
+  }
+  .thdsecp {
+    margin-bottom: 0rem;
+  }
+  .logo {
+    display: flex;
+    flex-direction: row;
+  }
+  footer {
+    display: grid;
+    grid-template-areas:
+      "log cl sm"
+      "ft ft ft";
+    padding-top: 3rem;
+  }
+  footer img {
+    grid-area: log;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  .contactList {
+    grid-area: cl;
+    display: grid;
+    grid-template-areas:
+      "faq pp in"
+      "c press t";
+    justify-items: left;
+    margin: 0rem 6rem 0rem 3rem;
+  }
+  li {
+    margin: 0px;
+  }
+  #faqs {
+    grid-area: faq;
+  }
+  #contactUs {
+    grid-area: c;
+    margin-top: 1rem;
+  }
+  #privacy {
+    grid-area: pp;
+  }
+  #press {
+    grid-area: press;
+    margin-top: 1rem;
+  }
+  #install {
+    grid-area: in;
+  }
+
+  .SocialIcon {
+    grid-area: sm;
+    align-items: center;
+    margin-bottom: 0rem;
+  }
+  .attribution {
+    grid-area: ft;
+  }
+}
